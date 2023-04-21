@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.App {
+  padding-top: 2rem;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.user-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.user-bubble {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.user-bubble:focus,
+.user-bubble:hover {
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.user-bubble:focus {
+  outline: none;
+}
+
+@media (max-width: 767.98px) {
+  .user-bubbles {
+    justify-content: center;
+  }
+}
